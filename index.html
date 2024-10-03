@@ -3,64 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah Muhammad's Portfolio</title>
+    <title>Abdullah Muhammad - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
+    <!-- Banner Section -->
+    <section id="banner">
         <h1>Abdullah Muhammad</h1>
-        <p>A Computer Information Systems graduate specializing in cybersecurity, data analysis, and project management. Currently pursuing CompTIA Security+ certification.</p>
-        <p>View my <a href="https://www.linkedin.com/in/abdullah-nawaz-muhammad" target="_blank">LinkedIn Profile</a></p>
+        <p>Cybersecurity Expert, Business Analyst, and Community Advocate</p>
+        <a href="https://www.linkedin.com/in/abdullah-nawaz-muhammad" target="_blank">LinkedIn</a>
+        <a href="https://github.com/YourGitHubProfile" target="_blank">GitHub</a>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Cybersecurity Awareness</li>
-            <li>Power BI, SQL, SharePoint</li>
-            <li>Project Management, Data Analysis</li>
-        </ul>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/profile.jpg" alt="Abdullah's Profile Picture">
+            <p>Results-driven Computer Information Systems graduate with a minor in Finance from Mount Royal University, specializing in cybersecurity and data analysis. I love working on cars and actively contribute to the community through Kids Play Foundation and Islamic Relief programs.</p>
+            <p>Currently pursuing certifications in SCRUM, CompTIA Security+, and Data Governance.</p>
+        </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience">
         <h2>Experience</h2>
-        <div class="job">
-            <h3>Cybersecurity Analyst Intern - Enbridge</h3>
-            <p>Implemented cybersecurity awareness programs and analyzed human risk behaviors through data-driven approaches.</p>
-        </div>
-        <div class="job">
-            <h3>Team Lead - Genesis Centre</h3>
-            <p>Mentored a team of 20 employees and optimized event logistics, increasing operational efficiency by 20%.</p>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <h3>Cybersecurity Awareness & Analyst Intern</h3>
+                <p>Enbridge Inc. | May 2023 – Aug 2024</p>
+                <p>Enhanced cybersecurity culture and reduced human risk through comprehensive training programs and phishing tests.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Team Lead / Guest Services Representative</h3>
+                <p>Genesis Centre | Mar 2018 – Present</p>
+                <p>Managed teams, coordinated events, and developed social media campaigns to enhance community engagement.</p>
+            </div>
+            <!-- Add more job experiences as needed -->
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Cybersecurity Awareness Research Project</h3>
-            <p>Developed a phishing simulation that reduced incidents by 25% and increased employee vigilance by 40%.</p>
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="images/project1.jpg" alt="Cybersecurity Awareness Project">
+                <h3>Cybersecurity Awareness Research Project</h3>
+                <p>Simulated phishing attacks and improved employee vigilance by 40%.</p>
+            </div>
+            <div class="project-item">
+                <img src="images/project2.jpg" alt="Corporate Website Development">
+                <h3>Corporate Website Development</h3>
+                <p>Developed a responsive website that improved user navigation by 30%.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:amuha363@mtroyal.ca">amuha363@mtroyal.ca</a></p>
-        <p>Phone: 403-991-4563</p>
+    <!-- Community Section -->
+    <section id="community">
+        <h2>Community Involvement</h2>
+        <p>I actively contribute to my community by working with Kids Play Foundation and Islamic Relief programs, focusing on community development and outreach.</p>
+        <div class="community-images">
+            <img src="images/community1.jpg" alt="Kids Play Foundation">
+            <img src="images/community2.jpg" alt="Islamic Relief Program">
+        </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certification-list">
+            <div class="certification-item">
+                <h3>SCRUM Certification</h3>
+                <p>In progress...</p>
+            </div>
+            <div class="certification-item">
+                <h3>CompTIA Security+ Certification</h3>
+                <p>In progress...</p>
+            </div>
+            <div class="certification-item">
+                <h3>Data Governance Certification</h3>
+                <p>In progress...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:amuha363@mtroyal.ca" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Abdullah Muhammad. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
