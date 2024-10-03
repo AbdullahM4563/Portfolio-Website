@@ -26,6 +26,3 @@ This portfolio is built using:
 - **CSS3**: For styling and responsive design.
 - **JavaScript**: For enhancing interactivity and smooth user experience.
 - **GitHub Pages**: For hosting and deploying the website.
-
-## 📂 Project Structure
-
